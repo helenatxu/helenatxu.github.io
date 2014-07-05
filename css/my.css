@@ -1,0 +1,113 @@
+body {	
+}
+
+#main {
+	background-color: #ededed;
+}
+
+#whatido {
+	background-color: #009999;
+}
+
+#projects {
+	background-color: #333333;
+}
+
+#contact {
+	background-color: #ededed;
+}
+
+.love {
+	color: #ff0066;
+	font-family: 'Dancing Script', Georgia, Times, serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 20px;
+	text-shadow: #cc3366 -1px -1px 0, white 0px 1px 0;
+}
+
+.top-bar .name h1 a {
+	color: #ff0066;
+	font-size: 1.6em;
+	text-shadow: none;
+}
+
+.top-bar {
+	background-color: #000000;
+}
+
+#photoHelena {
+	margin-top: 10%;
+}
+
+h1 {
+	font-family: 'Magra', sans-serif;
+	font-size: 2.1em;
+	font-weight: 700;
+	line-height: 1.15em;
+	margin-top: -8%;
+	text-shadow: white 1px 1px 0;
+}
+
+h2 {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	text-shadow: white 1px 1px 0;
+}
+
+h1, h2 {
+	color: #525353;
+}
+
+#main {
+	text-align: center;
+}
+
+/*Small-Medium screens min-width 500px */
+@media only screen and (min-width: 26em) {
+	h1 {
+		font-size: 2.6em;
+		font-weight: 700;
+		line-height: 1.2em;
+		text-shadow: #333333 -1px -1px 0, white 1px 1px 0;
+	}
+
+	h2 {
+		font-size: 1.4em;
+		font-weight: 300;
+	}
+}
+
+/*Medium screens min-width 641px */
+@media only screen and (min-width: 40.063em) {
+	h1 {
+		line-height: 1.25em;
+		margin-top: 20%;
+		text-shadow: #333333 -1px -1px 0, white 1px 1px 0;
+	}
+
+	h2 {
+		font-size: 1.3em;
+		font-weight: 300;
+	}
+}
+
+
+
+/*Large screens min-width 1025px*/
+@media only screen and (min-width: 64.063em) {
+	h1 {
+		font-size: 4em;
+		font-weight: 700;
+		line-height: 1.25em;
+		text-shadow: #333333 -1px -1px 0, white 1px 1px 0;
+	}
+
+	h2 {
+		font-size: 1.6em;
+		font-weight: 300;
+	}
+}
+
+
