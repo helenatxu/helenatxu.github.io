@@ -61,7 +61,7 @@ body {
   text-align: center;
 }
 
-#whatido h1, #projects h1, #contact h1 {
+#whatido h1, #projects h1, #contact h1, #contact h2 {
   color: #FFFFFF;
   font-family: 'Magra', sans-serif;
   font-size: 2.6em;
@@ -71,14 +71,33 @@ body {
   text-shadow: black 1px 1px 0;
 }
 
-#contact h1 {
+#contact h1, #contact h2 {
   color: #009999;
 }
 
 
-#projects h2 {
-  color: #ff0066;
+#contact h2 {
+  font-size: 1.8em;
 }
+
+#projects h2, #whatido h2 {
+  /*color: #cc3366;*/
+  color: #ff0066;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 300;
+  text-shadow: #cc3366 -1px -1px 0, black 0px 1px 0;
+}
+
+#about p {
+  color: #333333;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  /*text-shadow: #333333 -1px -1px 0, white 1px 1px 0;*/
+}
+
 
 /*Small-Medium screens min-width 500px */
 @media only screen and (min-width: 26em) {
