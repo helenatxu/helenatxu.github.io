@@ -1,6 +1,11 @@
 body {  
 }
 
+p {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
 #main {
   background-color: #ededed;
 }
@@ -18,6 +23,8 @@ body {
 }
 
 .love {
+  /*color: #ff0066;*/
+  /*color: #ff3366;*/
   color: #ff0066;
   font-family: 'Dancing Script', Georgia, Times, serif;
   font-size: 1.5em;
@@ -67,8 +74,14 @@ body {
   font-size: 2.6em;
   font-weight: 700;
   line-height: 1.15em;
+  margin-top: 10%;
   text-align: center;
-  text-shadow: black 1px 1px 0;
+  /*text-shadow:*/ black 1px 1px 0;
+  /*text-shadow: -1px -1.5px 0.4px #333333, 1px 1px 0 white;*/
+  /*text-shadow: -2px -2.5px 0.7px #333333, 0.5px 0.5px white;*/
+  /*text-shadow: -1px -2.85px 0.4px #333333, 1px 1px 0 white;*/
+  text-shadow: -1px -2.35px 1.75px #333333, -0.5px 0.5px 0.25px white;
+
 }
 
 #contact h1, #contact h2 {
@@ -112,6 +125,14 @@ body {
     font-size: 1.4em;
     font-weight: 300;
   }
+
+  #whatido h1, #projects h1, #contact h1 {
+    font-size: 5em;
+  }
+
+  #whatido h2, #projects h2, #contact h2 {
+    font-size: 2.5em;
+  }
 }
 
 /*Medium screens min-width 641px */
@@ -125,6 +146,10 @@ body {
   #main h2 {
     font-size: 1.3em;
     font-weight: 300;
+  }
+
+  #whatido h1, #projects h1, #contact h1 {
+    font-size: 7em;
   }
 }
 
