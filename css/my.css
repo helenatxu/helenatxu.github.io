@@ -84,6 +84,11 @@ p {
 
 }
 
+#projects p {
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+
 #contact h1, #contact h2 {
   color: #009999;
 }
