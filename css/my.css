@@ -76,11 +76,12 @@ p {
   line-height: 1.15em;
   margin-top: 10%;
   text-align: center;
-  /*text-shadow:*/ black 1px 1px 0;
+  /*text-shadow: black 1px 1px 0;*/
   /*text-shadow: -1px -1.5px 0.4px #333333, 1px 1px 0 white;*/
   /*text-shadow: -2px -2.5px 0.7px #333333, 0.5px 0.5px white;*/
   /*text-shadow: -1px -2.85px 0.4px #333333, 1px 1px 0 white;*/
-  text-shadow: -1px -2.35px 1.75px #333333, -0.5px 0.5px 0.25px white;
+  /*text-shadow: -1px -2.35px 1.75px #333333, -0.5px 0.5px 0.25px white;*/
+  text-shadow: -1px -1.75px 1.75px #333333, -0.5px 0.5px 0.25px white;
 
 }
 
