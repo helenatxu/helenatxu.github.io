@@ -6,6 +6,12 @@ p {
   font-weight: 300;
 }
 
+h2 {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
 #main {
   background-color: #ededed;
 }
@@ -85,9 +91,11 @@ p {
 
 }
 
+
 #projects p {
   color: #FFFFFF;
-  font-size: 1.5em;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 #contact h1, #contact h2 {
@@ -102,10 +110,11 @@ p {
 #projects h2, #whatido h2 {
   /*color: #cc3366;*/
   color: #ff0066;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 300;
   text-shadow: #cc3366 -1px -1px 0, black 0px 1px 0;
+}
+
+#projects h2 {
+  text-shadow: none;
 }
 
 #about p {
@@ -139,6 +148,10 @@ p {
   #whatido h2, #projects h2, #contact h2 {
     font-size: 2.5em;
   }
+
+  #projects p {
+    font-size: 1.2em;
+  }
 }
 
 /*Medium screens min-width 641px */
@@ -156,6 +169,10 @@ p {
 
   #whatido h1, #projects h1, #contact h1 {
     font-size: 7em;
+  }
+
+  #about .text {
+    width: 300px;
   }
 }
 
