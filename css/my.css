@@ -74,13 +74,13 @@ h2 {
   text-align: center;
 }
 
-#whatido h1, #projects h1, #contact h1, #contact h2 {
+#whatido h1, #projects h1, #contact h2 {
   color: #FFFFFF;
   font-family: 'Magra', sans-serif;
   font-size: 2.6em;
   font-weight: 700;
   line-height: 1.15em;
-  margin-top: 10%;
+  padding-top: 10%;
   text-align: center;
   /*text-shadow: black 1px 1px 0;*/
   /*text-shadow: -1px -1.5px 0.4px #333333, 1px 1px 0 white;*/
@@ -98,7 +98,7 @@ h2 {
   font-weight: 300;
 }
 
-#contact h1, #contact h2 {
+/*#contact h1, */#contact h2 {
   color: #009999;
 }
 
@@ -124,6 +124,35 @@ h2 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300;
   /*text-shadow: #333333 -1px -1px 0, white 1px 1px 0;*/
+}
+
+.inset-text {
+    /* Shadows are visible under slightly transparent text color */
+    /*color: rgba(10,60,150, 0.8);*/
+    /*text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;*/
+    /*text-shadow: 0px 1px 0px #e5e5ee;*/
+    color: rgba(51, 153, 153, 0.8);
+    /*text-shadow: 1px 1px white, -1px -1px #444;*/
+    /*text-shadow: 0 1px white, -1px -1px 0.4px #444;*/
+    text-shadow: 0px -1px 0px #003333;
+}
+
+.inset-shadow {
+  color: rgba(50, 151, 151, 0.8);
+  font-size: 48px;
+  text-shadow: 1px 1px 1px white, 0 0 0 #000;
+  font-family: 'Magra', sans-serif;
+  font-size: 2.6em;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Don't show shadows when selecting text */
+::-moz-selection { 
+  background: #5af; color: #fff; text-shadow: none; 
+}
+::selection {
+  background: #5af; color: #fff; text-shadow: none; 
 }
 
 
