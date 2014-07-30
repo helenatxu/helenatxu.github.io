@@ -3,9 +3,9 @@ $(document).ready(function(){
 
 	$( "#effect" ).show( "slide", 500 );
 
-	$( window ).scroll(function() {
-	//	$( "span" ).css( "display", "inline" ).fadeOut( "slow" );
-	});
+	// $( window ).scroll(function() {
+	// 	$( ".row1" ).css( "display", "inline" ).fadeOut( "slow" );
+	// });
 
 
 	var $slideEffect = $(".slideEffect");
@@ -25,7 +25,7 @@ $(document).ready(function(){
 			var options = {};
 
 			// run the effect
-			$( "#effect" ).show( "slide", options, 500, callback );
+			$( ".effect" ).show( "slide", options, 500, callback );
 			$( "#effect1" ).show( "slide", options, 700, callback );
 			$( "#effect2" ).show( "slide", options, 900, callback );
 		};
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		$( "#button" ).click(function() {
 			runEffect();
 		});
-		$( "#effect" ).hide();
+		$( ".effect" ).hide();
 	});
 
 });
