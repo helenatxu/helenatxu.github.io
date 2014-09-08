@@ -1,45 +1,53 @@
 $(document).ready(function(){	
 
+	$( ".effect" ).hide();
+	$( ".effect2" ).hide();
+	$( ".effect3" ).hide();
+	$( ".inverted-effect" ).hide();
+	$( ".inverted-effect2" ).hide();
+	$( ".inverted-effect3" ).hide();
 
-	$( "#effect" ).show( "slide", 500 );
-
-	// $( window ).scroll(function() {
-	// 	$( ".row1" ).css( "display", "inline" ).fadeOut( "slow" );
-	// });
-
-
-	var $slideEffect = $(".slideEffect");
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
-			$slideEffect.stop().animate({left: "200px"}, 300);
-		} else {
-			$slideEffect.stop().animate({left: "-90px"}, 300);
-		}
+	$('.multiple-items').slick({
+		accessibility: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		dots: true,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
 	});
 
 
-	$(function() {
-		// run the currently selected effect
-		function runEffect() {
-			// most effect types need no options passed by default
-			var options = {};
+	//callback function to bring a hidden box back
+	function callback() {
+		setTimeout(function() {
+			$( "#effect:visible" ).removeAttr( "style" ).fadeOut();
+		}, 2500 );
+	};
 
-			// run the effect
-			$( ".effect" ).show( "slide", options, 500, callback );
-			$( "#effect1" ).show( "slide", options, 700, callback );
-			$( "#effect2" ).show( "slide", options, 900, callback );
-		};
-		//callback function to bring a hidden box back
-		function callback() {
-			setTimeout(function() {
-				$( "#effect:visible" ).removeAttr( "style" ).fadeOut();
-			}, 2500 );
-		};
-		// set effect from select menu value
-		$( "#button" ).click(function() {
-			runEffect();
-		});
-		$( ".effect" ).hide();
+
+	$(window).scroll(function() {
+		var options = { direction: 'right' };
+		var options_inverted = { direction: 'left' };
+		var y_scroll_pos = window.pageYOffset;
+
+		switch (true) {
+			case y_scroll_pos >= 600:
+			$( ".effect3" ).show( "slide", options, 1000, callback );
+			$( ".inverted-effect3" ).show( "slide", options_inverted, 1000, callback );
+			break;
+
+			case y_scroll_pos >= 400:
+			$( ".effect2" ).show( "slide", options, 1800, callback );
+			$( ".inverted-effect2" ).show( "slide", options_inverted, 1800, callback );
+			break;
+
+			case y_scroll_pos >= 200:
+			$( ".effect" ).show( "slide", options, 2600, callback );
+			$( ".inverted-effect" ).show( "slide", options_inverted, 2600, callback );
+			break;
+		}
+
 	});
 
 });

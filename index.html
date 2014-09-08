@@ -5,8 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Portfolio | Helena Moreno Chacón</title>
 	<link href='http://fonts.googleapis.com/css?family=Dancing+Script|Magra:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/foundation.css" />
-	<link rel="stylesheet" href="css/my.css" />
+	<link rel="stylesheet" type="text/css" href="css/foundation.css" />
+	<link rel="stylesheet" type="text/css" href="css/my.css" />
+	<link rel="stylesheet" type="text/css" href="css/icons.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/style.css" />
+
 	<script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
@@ -53,36 +57,40 @@
 
 	<section id="whatido">
 		<h1>What I do</h1>
-		<div class="row">			
-			<div id="clickme">Click here</div>
-			<img id="book" src="book.png" alt="" width="100" height="123">
-		</div>
-
-		<div class="row">
-			<div class="toggler">
-				<div class="effect ui-widget-content ui-corner-all">
-					<h3 class="ui-widget-header ui-corner-all">Holaaa Show</h3>
-					<p>
-						Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
-					</p>
+		<!-- <div>
+			<div class="row">
+				<div class="medium-9 large-9 columns text-center inverted-effect">
+					<h2>Web Design</h2>
+					<p>I design intuitive and responsive web interfaces</p>
 				</div>
 			</div>
-			<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
-		</div>
+			<div class="row">
+				<div class="medium-9 large-9 columns text-center inverted-effect2">
+					<h2>Web Development</h2>
+					<p>I develop web applications using the last technologies, following the web standards, easy to maintain and accesible to people with disabilities.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="medium-9 large-9 columns text-center inverted-effect3">
+					<h2>Marketing Online</h2>
+					<p>I improve the visibility of you website and brand on the main search engines like Google and Yahoo using SEO techniques. I also integrate your website with social platforms, newsletter, GoogleMaps, internationalization and localization.</p>
+				</div>
+			</div>
+		</div> -->
 		<div class="row">
-			<div class="medium-9 large-9 columns panel effect">
+			<div class="medium-9 large-9 columns text-center panel effect">
 				<h2>Web Design</h2>
 				<p>I design intuitive and responsive web interfaces</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="medium-9 large-9 columns panel">
+			<div class="medium-9 large-9 columns text-center panel effect2">
 				<h2>Web Development</h2>
 				<p>I develop web applications using the last technologies, following the web standards, easy to maintain and accesible to people with disabilities.</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="medium-9 large-9 columns panel">
+			<div class="medium-9 large-9 columns text-center panel effect3">
 				<h2>Marketing Online</h2>
 				<p>I improve the visibility of you website and brand on the main search engines like Google and Yahoo using SEO techniques. I also integrate your website with social platforms, newsletter, GoogleMaps, internationalization and localization.</p>
 			</div>
@@ -91,33 +99,38 @@
 
 	<section id="projects">
 		<h1>Projects</h1>
-		<div class="row">
-			<div class="large-12 medium-12 columns text-center">
-				<img class="portfolioThmb" data-interchange="[img/thumbnails/portfolio-main-thumb.jpg, (default)], [img/thumbnails/portfolio-main-thumb.jpg, (large)]">
-				<h2>Previous portfolio</h2>
-				<p>Web design, development HTML5, CSS3, JavaScript, Foundation.</p>
-			</div>
-			<div class="large-11 medium-11 columns text-center">
-				<img class="portfolioThmb" data-interchange="[img/thumbnails/routefinder-index-thumb.jpg, (default)], [img/thumbnails/routefinder-index-thumb.jpg, (large)]">
-				<h2>RouteFinder</h2>
-				<p>Web design, development in HTML, CSS, JavaScript, Ruby on Rails, GoogleMaps API.</p>
-			</div>
-			<div class="large-10 medium-10 columns text-center">
-				<img class="portfolioThmb" data-interchange="[img/thumbnails/handbagshop-cart-thumb.jpg, (default)], [img/thumbnails/handbagshop-cart-thumb.jpg, (large)]">
-				<h2>Other small projects</h2>
-				<p>Web design, development HTML5, CSS3, JavaScript, Bootstrap.</p>
+		<div class="content">
+			<div class="slider multiple-items blue">
+				<div>
+					<img class="portfolioThmb" src="img/thumbnails/portfolio-main-thumb.jpg">
+					<h2>Previous portfolio</h2>
+					<p>Web design, development HTML5, CSS3, JavaScript, Foundation.</p>
+				</div>
+				<div>
+					<img class="portfolioThmb" src="img/thumbnails/routefinder-index-thumb.jpg">
+					<h2>RouteFinder</h2>
+					<p>Web design, development in HTML, CSS, JavaScript, Ruby on Rails, GoogleMaps API.</p>
+				</div>
+				<div>
+					<img class="portfolioThmb" <img class="portfolioThmb" src="img/thumbnails/handbagshop-cart-thumb.jpg">
+					<h2>Other small projects</h2>
+					<p>Web design, development HTML5, CSS3, JavaScript, Bootstrap.</p>
+				</div>
 			</div>
 		</div>
+
 	</section>
 
 	<section id="contact">
 		<div class="row">
-			<h1 class="inset-shadow
-			">Contact me</h1>
-			<p title="View my projects on GitHub"></p>
-			<p title="Send me an e-mail"></p>
-			<p title="Add me on LinkedIn"></p>
-			<p title="Follow me on Twitter!"></p>
+			<h1 class="inset-shadow">Contact me</h1>
+			<!-- <p class="share spin">Share
+			<a class="icon github" title="View my projects on GitHub">S</a>
+				<a class="icon email" title="Send me an e-mail">L</a>
+				<a class="icon linkedin" title="Add me on LinkedIn">F</a>
+				<a class="icon twitterbird" title="Follow me on Twitter!"></a>
+			</p>
+			<p class="share spin">share<a class="fb" href="#">F</a><a class="twitter" href="#">L</a><a class="stumble" href="#">S</a></p> -->
 		</div>
 		<hr>
 		<div id="about" class="row">
@@ -125,16 +138,21 @@
 			<p>Traveler. Nature lover. Fotographer as hobby. Passionate about other cultures and their people. Learning Arabic language. Agogo aprentice.</p>
 		</div>
 		<div>
-			MAPA
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47939836.38353819!2d-23.32214191872647!3d42.830288417807914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1408807209866" width="100%" height="300" frameborder="0" style="border:0"></iframe>
 		</div>
 	</section>
 
-	<script src="js/vendor/jquery.js"></script>
-	<script src="js/vendor/jquery-ui.js"></script>
-	<script src="js/foundation.min.js"></script>
-	<script src="js/my.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/foundation.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<!-- // <script type="text/javascript" src="js/vendor/scripts.js"></script> -->
+
+	<script type="text/javascript" src="js/my.js"></script>
 	<script>
 		$(document).foundation();
 	</script>
+
 </body>
 </html>

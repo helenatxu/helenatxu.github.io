@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*HEADER*/
+.header {
+  height: 25px;
+  background: #222;
+  color: #eee;
+  text-align: center;
+  font: 10px/25px Helvetica, Verdana, sans-serif; 
+}
+
+.header a {
+  color: #999;
+}
+
+/*PARAGRAPH*/
+p.share {
+  position: relative;
+  margin: 50px 0;
+  padding-left: 10px;
+  width: 440px;
+  height: 100px;
+  background: #eee;
+  font: 100 75px/100px Helvetica, sans-serif;
+}
+
+/*LINK*/
+.share a {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  color: #555;
+  text-decoration: none;
+  font: 75px/100px 'socialicoregular', Helvetica, sans-serif;
+  opacity: 0;
+
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  z-index: 5;
+}
+
+/*HOVERS*/
+.share:hover {
+  cursor: pointer;
+}
+
+.share:hover a {
+  opacity: 1;
+  
+}
+
+.share a:hover {
+  color: #00afec;
+  font-size: 90px;
+}
+
+.share:hover .fb {
+  left: 215px;
+}
+
+.share:hover .twitter {
+  left: 256px;
+}
+
+.share:hover .stumble {
+  left: 325px;
+}
+
+.spin:hover a {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/*.flip:hover a {
+  -webkit-transform: rotateX(360deg);
+  -moz-transform: rotateX(360deg);
+  -o-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.twirl:hover a {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.crazy:hover a {
+  -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  -moz-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  -o-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  -ms-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+}*/
+
+.grow a {
+  -webkit-transform: scale(0.0);
+  -moz-transform: scale(0.0);
+  -o-transform: scale(0.0);
+  -ms-transform: scale(0.0);
+  transform: scale(0.0);
+}
+
+.grow:hover a {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*FONT EMBED*/
+@font-face {
+  font-family: 'socialicoregular';
+  src: url('../fonts/socialico.eot');
+  src: url('../fonts/socialico.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/socialico.woff') format('woff'),
+       url('../fonts/socialico.ttf') format('truetype'),
+       url('../fonts/socialico.svg#socialicoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'socialicoplus';
+  src: url('../fonts/socialico_plus.eot');
+  src: url('../fonts/socialico_plus.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/socialico_plus.woff') format('woff'),
+       url('../fonts/socialico_plus.ttf') format('truetype'),
+       url('../fonts/socialico_plus.svg#socialicoplus') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
